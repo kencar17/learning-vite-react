@@ -9,6 +9,8 @@ import {
 import { Landing } from './routes/landing.tsx'
 import { Settings } from './routes/settings.tsx'
 import { LoginForm } from './routes/login.tsx'
+import { Dashboard } from './routes/dashboard.tsx';
+import { Products } from './routes/products.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginForm />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+  },
+  {
+    path: "/products",
+    element: <Products />,
   },
   {
     path: "/settings",

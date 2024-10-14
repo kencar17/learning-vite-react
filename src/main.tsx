@@ -11,6 +11,7 @@ import { Settings } from './routes/settings.tsx'
 import { LoginForm } from './routes/login.tsx'
 import { Dashboard } from './routes/dashboard.tsx';
 import { Products } from './routes/products.tsx';
+import { EditProduct } from './routes/edit_product.tsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/products",
     element: <Products />,
+  },
+  {
+    path: "/edit-product",
+    element: <EditProduct />,
   },
   {
     path: "/settings",

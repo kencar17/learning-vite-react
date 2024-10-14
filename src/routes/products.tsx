@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import {
   File,
   ListFilter,
-  MoreHorizontal,
   PlusCircle,
 } from "lucide-react"
 
@@ -19,7 +19,6 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
@@ -39,6 +38,7 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 import { Navbar } from "@/layouts/nav";
+import viteLogo from '/vite.svg'
 
 
 export function Products() {
@@ -130,7 +130,7 @@ export function Products() {
                           alt="Product image"
                           className="aspect-square rounded-md object-cover"
                           height="64"
-                          src="/placeholder.svg"
+                          src={viteLogo}
                           width="64"
                         />
                       </TableCell>
@@ -148,23 +148,12 @@ export function Products() {
                         2023-07-12 10:42 AM
                       </TableCell>
                       <TableCell>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button
-                              aria-haspopup="true"
-                              size="icon"
-                              variant="ghost"
-                            >
-                              <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">Toggle menu</span>
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                            <DropdownMenuItem>Edit</DropdownMenuItem>
-                            <DropdownMenuItem>Delete</DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link
+                            to="/edit-product"
+                            className="text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Edit
+                        </Link>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -173,7 +162,7 @@ export function Products() {
                           alt="Product image"
                           className="aspect-square rounded-md object-cover"
                           height="64"
-                          src="/placeholder.svg"
+                          src={viteLogo}
                           width="64"
                         />
                       </TableCell>
@@ -191,23 +180,12 @@ export function Products() {
                         2023-10-18 03:21 PM
                       </TableCell>
                       <TableCell>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button
-                              aria-haspopup="true"
-                              size="icon"
-                              variant="ghost"
-                            >
-                              <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">Toggle menu</span>
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                            <DropdownMenuItem>Edit</DropdownMenuItem>
-                            <DropdownMenuItem>Delete</DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link
+                            to="/edit-product"
+                            className="text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Edit
+                        </Link>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -216,7 +194,7 @@ export function Products() {
                           alt="Product image"
                           className="aspect-square rounded-md object-cover"
                           height="64"
-                          src="/placeholder.svg"
+                          src={viteLogo}
                           width="64"
                         />
                       </TableCell>
@@ -234,23 +212,14 @@ export function Products() {
                         2023-11-29 08:15 AM
                       </TableCell>
                       <TableCell>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button
-                              aria-haspopup="true"
-                              size="icon"
-                              variant="ghost"
-                            >
-                              <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">Toggle menu</span>
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                            <DropdownMenuItem>Edit</DropdownMenuItem>
-                            <DropdownMenuItem>Delete</DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+
+                        <Link
+                            to="/edit-product"
+                            className="text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Edit
+                        </Link>
+
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -259,7 +228,7 @@ export function Products() {
                           alt="Product image"
                           className="aspect-square rounded-md object-cover"
                           height="64"
-                          src="/placeholder.svg"
+                          src={viteLogo}
                           width="64"
                         />
                       </TableCell>
@@ -277,23 +246,12 @@ export function Products() {
                         2023-12-25 11:59 PM
                       </TableCell>
                       <TableCell>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button
-                              aria-haspopup="true"
-                              size="icon"
-                              variant="ghost"
-                            >
-                              <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">Toggle menu</span>
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                            <DropdownMenuItem>Edit</DropdownMenuItem>
-                            <DropdownMenuItem>Delete</DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link
+                            to="/edit-product"
+                            className="text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Edit
+                        </Link>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -302,7 +260,7 @@ export function Products() {
                           alt="Product image"
                           className="aspect-square rounded-md object-cover"
                           height="64"
-                          src="/placeholder.svg"
+                          src={viteLogo}
                           width="64"
                         />
                       </TableCell>
@@ -320,23 +278,12 @@ export function Products() {
                         2024-01-01 12:00 AM
                       </TableCell>
                       <TableCell>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button
-                              aria-haspopup="true"
-                              size="icon"
-                              variant="ghost"
-                            >
-                              <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">Toggle menu</span>
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                            <DropdownMenuItem>Edit</DropdownMenuItem>
-                            <DropdownMenuItem>Delete</DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link
+                            to="/edit-product"
+                            className="text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Edit
+                        </Link>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -345,7 +292,7 @@ export function Products() {
                           alt="Product image"
                           className="aspect-square rounded-md object-cover"
                           height="64"
-                          src="/placeholder.svg"
+                          src={viteLogo}
                           width="64"
                         />
                       </TableCell>
@@ -363,23 +310,12 @@ export function Products() {
                         2024-02-14 02:14 PM
                       </TableCell>
                       <TableCell>
-                        <DropdownMenu>
-                          <DropdownMenuTrigger asChild>
-                            <Button
-                              aria-haspopup="true"
-                              size="icon"
-                              variant="ghost"
-                            >
-                              <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">Toggle menu</span>
-                            </Button>
-                          </DropdownMenuTrigger>
-                          <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                            <DropdownMenuItem>Edit</DropdownMenuItem>
-                            <DropdownMenuItem>Delete</DropdownMenuItem>
-                          </DropdownMenuContent>
-                        </DropdownMenu>
+                        <Link
+                            to="/edit-product"
+                            className="text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Edit
+                        </Link>
                       </TableCell>
                     </TableRow>
                   </TableBody>
